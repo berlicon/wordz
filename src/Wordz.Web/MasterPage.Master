@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" EnableViewState="false" CodeBehind="MasterPage.master.cs"
+    Inherits="Wordz.Web.MasterPage" %>
+
+<%@ Register Src="Controls/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<%@ Register Src="Controls/Login.ascx" TagName="Login" TagPrefix="uc" %>
+<%@ Register Src="Controls/Advert.ascx" TagName="Advert" TagPrefix="uc" %>
+<%@ Register Src="Controls/Language.ascx" TagName="Language" TagPrefix="uc" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <script type="text/javascript" language="javascript" src="/js/json.js" ></script>
+    <script type="text/javascript" language="javascript" src="/js/wordz.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.arcticmodal-0.3.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/wordz.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/chosen.css">
+    <link rel="stylesheet" href="/css/jquery.formstyler.css">
+    <link rel="stylesheet" href="/css/jquery-ui-1.8.13.custom.css">
+    <link rel="stylesheet" href="/css/jquery.rating.css" type="text/css" />
+    <link rel="stylesheet" href="/css/jquery.arcticmodal-0.3.css"/>
+    <link rel="stylesheet" href="/css/jquery.arcticmodal.simple.css"/>
+    <!--[if IE 7]>
+		<link rel="stylesheet" href="/css/ie7.css">
+  	<![endif]-->
+    <asp:ContentPlaceHolder ID="chpHead" runat="server" />
+</head>
+<body class="innerPage">
+    <form id="form" runat="server" enctype="multipart/form-data" method="post">
+    <div id="frameWrapper">
+        <div id="header">
+            <div id="logo">
+                <a href="/">
+                    <img src="/img/logo.png" alt=""></a></div>
+            <div id="headerCenter">
+                <div class="contentTitle">
+                    <asp:ContentPlaceHolder ID="cphPageCaption" runat="server" />
+                </div>
+                <div class="siteName">
+                    <asp:ContentPlaceHolder ID="cphPageDescription" runat="server" />
+                </div>
+            </div>
+            <div id="cabinet">
+                <uc:Login runat="server" />
+            </div>
+            <div class="clr">
+            </div>
+        </div>
+        <!--  end #header -->
+        <div id="middle">
+            <div id="center">
+                <asp:ContentPlaceHolder ID="cphMiddle" runat="server" />
+            </div>
+            <div id="right">
+                <div id="translate">
+					<uc:Language runat="server" />
+                </div>
+                <asp:ContentPlaceHolder ID="cphAd" runat="server" />
+            </div>
+        </div>
+    </div>
+    <div id="footerWrapper">
+        <uc:Footer runat="server" />
+    </div>
+    <script type="text/javascript" src="/js/chosen.jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.formstyler.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.8.13.custom.min.js"></script>
+    <script type="text/javascript" src="/js/ui.dropdownchecklist-1.4-min.js"></script>
+    <script type="text/javascript" src="/js/actions.js"></script>
+    <script type="text/javascript" src="/js/jquery.rating-2.0.js"></script>
+    <script type="text/javascript" src="/js/jquery.form.min.js"></script>
+    </form>
+</body>
+</html>

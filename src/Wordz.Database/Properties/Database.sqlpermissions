@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Permissions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dns="urn:Microsoft.VisualStudio.Data.Schema.Permissions" Version="1.0" xmlns="urn:Microsoft.VisualStudio.Data.Schema.Permissions">
+  <PermissionStatement Action="GRANT">
+    <Permission>CONNECT</Permission>
+    <Grantee>dbo</Grantee>
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>CONNECT</Permission>
+    <Grantee>wordz_user</Grantee>
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_film_part_ins" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_get_by_ordered" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_site_get" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_word_get_top_20" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_verb_get_list" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_verb_type_get_list" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_verb_get_top_20" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_get_sound_by_id" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_get_by_random" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_order_get_random" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_order_quiz_get_place" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_order_quiz_get_top" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_get_count" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_quiz_get_place" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_quiz_get_top" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_language_get_list" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_film_get_list_by_search" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_film_ins" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_get_count_sounded" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_get_by_id" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_get_by_domain" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_film_get_list_by_category" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_get_list_unsounded_short" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_level_quiz_get_top" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_level_quiz_get_place" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_level_get_random" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_film_upd_status" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_tv_get" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_get_id_by_original" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_tv_get_list" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_fm_get_list" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_fm_get" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_get_by_original" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_get" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_get_id_by_text" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_ins" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_get_count" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_upd" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_ins" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_upd" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_word_get_list" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_verb_del_list" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_domain_get" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_verb_get_info" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_verb_get_top" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_verb_ins" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_word_del" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_word_get" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_word_get_count" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_word_get_top" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_account_word_ins" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_article_get" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_article_get_by_id" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_category_get" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_word_ins_use_exist" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_film_category_get_list" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_film_clear_all" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+  <PermissionStatement Action="GRANT">
+    <Permission>EXECUTE</Permission>
+    <Grantee>wordz_users</Grantee>
+    <Object Name="pr_film_get" Schema="dbo" Type="OBJECT" />
+    <Grantor>dbo</Grantor>
+  </PermissionStatement>
+</Permissions>

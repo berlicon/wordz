@@ -1,0 +1,498 @@
+/**
+{
+	font-family: Verdana;
+	font-size: medium;
+}
+body
+{
+	background-color: #8FBC8B;
+}
+a
+{
+	color: #191970;
+	text-decoration: none;
+	border-bottom: dotted 3px #337522;
+}
+a:hover
+{
+	color: White;
+	background-color: #4682B4;
+}
+img
+{
+	border: 0;
+}
+input
+{
+	font-size: x-small;
+}
+textarea
+{
+	font-size: x-small;
+}
+h1
+{
+	text-align: right;
+}*/
+.ads
+{
+	font-size: small;
+}
+.ads a
+{
+	border-bottom: 0;
+}
+.ads a:hover
+{
+	background-color: #B0E0E6;
+}
+.header
+{
+	background: #CEFFCE;
+	text-align: right;
+}
+.language
+{
+	/*background: #ADD8E6;*/
+	text-align: right;
+	font-size: small;
+}
+.satellites
+{
+	/*background: #ADD8E6;*/
+	text-align: center;
+	font-size: small;
+}
+.footer
+{
+	background: #337522;
+}
+.footer a
+{
+	color: White;
+	border-bottom: dotted 3px White;
+}
+.footer .media
+{
+	background-color: #FFE7C6;
+	color: #191970;
+}
+.footer .media:hover
+{
+	color: White;
+	background-color: #4682B4;
+}
+.button
+{
+	color: White;
+	font-size: x-small;
+	font-weight: bold;
+	background: #337522;
+	padding: 2px 10px;
+	border: 0px;
+}
+.logo
+{
+	color: #191970;
+	font-size: x-large;
+	border-bottom: 0;
+}
+.logolastletter
+{
+	color: #DC143C;
+	font-size: x-large;
+}
+.logoyours
+{
+	color: #DC143C;
+	font-size: x-small;
+	font-weight: bold;
+}
+.logovocabulary
+{
+	color: #191970;
+	font-size: x-small;
+	font-weight: bold;
+}
+.logodiv
+{
+	width: 100%;
+	height: 100%;
+	background-color: #CEFFCE;
+	text-align: center;
+}
+.maintable
+{
+	width: 100%;
+	height: 100%;
+}
+.maintable td
+{
+	/*border: dotted 1px black;*/
+}
+.nobordertable td
+{
+	border: 0px;
+}
+.nobordertable td a
+{
+	border-bottom: 0;
+}
+.bordertable td
+{
+	border: dotted 1px black;
+}
+.noborderalignedtable td
+{
+	border: 0px;
+	padding: 3px;
+	text-align: center;
+}
+.nobordertablebig
+{
+	width: 100%;
+}
+.nobordertablebig td
+{
+	border: 0px;
+	text-align: center;
+}
+.colortable
+{
+	width: 100%;
+}
+.colortable ul
+{
+	LINE-HEIGHT: 1.5em;
+}
+.colortable td
+{
+	border: 0px;
+}
+.main
+{
+	background-color: #CEFFCC;
+	width: 65%;
+}
+.media
+{
+	background-color: #FFE7C6;
+}
+.other
+{
+	background-color: #ADD8E6;
+}
+.smalltext
+{
+	font-size: small;
+}
+.nick
+{
+	font-size: small;
+	font-weight: bold;
+}
+.tinytext
+{
+	font-size: xx-small;
+	border-bottom: 0;
+}
+.description
+{
+	font-size: x-small;
+}
+.nicktext
+{
+	background-color: Bisque;
+}
+.multilinetextbox
+{
+	width: 100%;
+	height: 100%;
+	background-color: Silver;
+}
+.numerictextbox
+{
+	width: 60px;
+	background-color: Silver;
+	text-align: right;
+}
+.divprogress
+{
+	Z-INDEX: 999;
+	POSITION: absolute;
+	LEFT: 370px;
+	TOP: 240px;
+	WIDTH: 200px;
+	HEIGHT: 60px;
+	TEXT-ALIGN: center;
+	BACKGROUND-COLOR: #CEFFCE;
+	COLOR: Black;
+	border: Solid Thin Black;
+}
+.divWords
+{
+	WIDTH: 100%;
+	HEIGHT: 100%;
+	BACKGROUND-COLOR: Silver;
+	overflow: scroll;
+	text-align:left;
+}
+.divWordsAll
+{
+	WIDTH: 100%;
+	HEIGHT: 100%;
+	BACKGROUND-COLOR: Silver;
+	overflow: scroll;
+	text-align:left;
+}
+.divWordsCheck
+{
+	WIDTH: 100%;
+	HEIGHT: 100%;
+	BACKGROUND-COLOR: Silver;
+	overflow: scroll;
+	text-align:left;
+}
+.unknown
+{
+	/*background-color: #FA8072;*/
+	color: #ba1f3c;
+	cursor: pointer;
+}
+.known
+{
+	/*background-color: #9ACD32;*/
+	color: #4783bb;
+	cursor: pointer;
+}
+.newsign
+{
+	font-size: xx-small;
+	font-weight: bold;
+	background-color: Yellow;
+	color: Red;
+}
+.updsign
+{
+	font-size: xx-small;
+	font-weight: bold;
+	background-color: Yellow;
+	color: Green;
+}
+.mainDivWordsOrderQuiz
+{
+	background-color: Bisque;
+	font-weight: bold;
+}
+.mainDivWordsOrderQuiz a
+{
+	border-bottom: 0;
+}
+
+/* Comment Control */
+
+.comment_control
+{
+	padding-top:15px;
+	border-top: 1px solid;
+	border-color: rgb(200,200,200);
+	width: 500px;
+}
+
+.comment_textbox
+{
+	width: 100%
+}	
+
+.comment_block 
+{
+	margin: 5px;
+}
+
+.comment_buttons
+{
+	text-align: right;
+}
+
+.comment_item
+{
+	display: none;
+	font-family: Tahoma, Verdana;
+	font-size: 11pt;
+	margin: 5px;
+}
+
+.comment_item:hover
+{
+	background-color: rgb(248, 248, 255);
+}
+.comment_item_header_date
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+	color: Gray;
+	padding-left: 10px;
+}
+.comment_item_header_user
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+	color:Gray;
+	text-decoration: underline;
+}
+
+.comment_captcha_text
+{
+	font-family:  Tahoma;
+	font-size: 12pt;
+}
+
+.comment_captcha_upd > input
+{
+	background-image: url('/img/refresh.png');
+	width: 30px;
+	height: 30px;
+}
+
+.comment_item_header_rating
+{
+	text-align: right;
+	width: 30px;
+}
+
+.comment_item_header_rating_positive
+{
+	color: Green;
+}
+
+.comment_item_header_rating_negative
+{
+	color: Red;
+}
+
+
+.comment_item_header_buttons
+{
+	text-align: right;
+	width: 100px;
+}
+
+.comment_item_header_claim
+{
+	margin-right: 5px;
+}
+
+.comment_item_header_claim > img:hover
+{
+	background-color: rgb(240, 240, 255);
+}
+
+.comment_item_header_up
+{
+	margin-right: 5px;
+	width: 35px;	
+}
+
+.comment_item_header_up > img:hover
+{
+	background-color: rgb(240, 240, 255);
+}
+
+.comment_item_header_down
+{
+	margin-right: 5px;
+	width: 35px;
+}
+
+.comment_item_header_down > img:hover
+{
+	background-color: rgb(240, 240, 255);
+}
+
+.comment_captcha_error
+{
+	color: Red;
+}
+
+.comment_item_body
+{
+	margin-left: 2px;
+}
+
+.comment_block_title
+{
+	font-family: Tahoma;
+	font-size: 14pt;
+	font-weight: bold;
+	color: Gray;
+	margin-bottom: 5px;
+}
+
+.comment_level_1
+{
+	margin-left:0px;
+}
+
+.comment_level_2
+{
+	margin-left: 20px;
+}
+
+.comment_level_3
+{
+	margin-left: 40px;
+}
+
+.comment_level_4
+{
+	margin-left: 60px;
+}
+
+
+div.listElementLink
+{
+	text-decoration:none;
+	background-color: White;
+	font-family: Tahoma;
+	font-size: 14px;
+	cursor: pointer;
+	border: 1px solid rgb(255,251,245);
+}
+
+div.listElementLink:hover
+{
+	border: 1px solid rgb(200,200,200);
+	cursor: pointer;
+}
+
+.module_item_container
+{
+	padding: 3px;
+}
+
+.module_item_container_table 
+{
+	width: 700px;
+}
+
+.module_item_left_panel
+{
+	width: inherit;
+}
+
+
+.module_item_right_panel
+{
+	text-align: left;
+	width: 100%;
+}
+
+.module_item_name
+{
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.module_item_rating
+{
+}

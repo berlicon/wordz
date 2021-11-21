@@ -1,0 +1,2 @@
+<%@ Control Language="c#" AutoEventWireup="False" Codebehind="UpdSign.ascx.cs" Inherits="Wordz.Web.Controls.UpdSign" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" EnableViewState="false"%>
+<span class="updsign">upd!</span>

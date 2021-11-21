@@ -1,0 +1,49 @@
+SCC = This is a source code control file
+
+[Wordz.Win.csproj]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project
+
+[Wordz.UT.csproj]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project
+
+[Wordz.DB.csproj]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project
+
+[Wordz.BE.csproj]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project
+
+[Wordz.Database.dbproj]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project
+
+[Wordz.Web.csproj]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project
+
+[Wordz.LngOpt.csproj]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project
+
+[Wordz.sln]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project
+
+[Wordz.BC.csproj]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project
+
+[Wordz.DBScripts.dbproj]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project
+
+[Wordz.Lng.csproj]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project
+
+[Wordz.Snd.csproj]
+SCC_Aux_Path = "P4SCC#mega:1666##ADMIN##MEGA"
+SCC_Project_Name = Perforce Project

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BDBC08B-77FD-44B5-8473-D86AD010C4EF}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Wordz.BE</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Wordz.BE</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wordz.LngOpt\Wordz.LngOpt.csproj">
+      <Name>Wordz.LngOpt</Name>
+      <Project>{4687AE45-E354-4150-ACAC-68E5E2E07045}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Wordz.Lng\Wordz.Lng.csproj">
+      <Name>Wordz.Lng</Name>
+      <Project>{0257AA40-A96C-4D33-B5AE-9EDDE67E4A16}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Answer.cs" />
+    <Compile Include="Article.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Course.cs" />
+    <Compile Include="Dto\AnswerDto.cs" />
+    <Compile Include="Dto\AccountMoneyInfoDto.cs" />
+    <Compile Include="Dto\CategoryDto.cs" />
+    <Compile Include="Dto\CourseDetailsDto.cs" />
+    <Compile Include="Currency.cs" />
+    <Compile Include="Dto\CourseDetailsWithModulesInfoDto.cs" />
+    <Compile Include="Dto\CourseWithPictureUpdateDto.cs" />
+    <Compile Include="Dto\ExerciseSelectDto.cs" />
+    <Compile Include="Dto\FilmListItemDto.cs" />
+    <Compile Include="Dto\FilmUpdateDto.cs" />
+    <Compile Include="Dto\FilmWithCategoryAndOrderDto.cs" />
+    <Compile Include="Dto\FmUpdateDto.cs" />
+    <Compile Include="Dto\FmWithOrderDto.cs" />
+    <Compile Include="Dto\GetUserCommentsDto.cs" />
+    <Compile Include="Dto\ModuleWithPaymentAndExercisesInfoDto.cs" />
+    <Compile Include="Dto\ModuleWithPaymentInfoDto.cs" />
+    <Compile Include="Dto\ModuleWithPictureUpdateDto.cs" />
+    <Compile Include="Dto\EntityOrderingUpdateInfoDto.cs" />
+    <Compile Include="Dto\RateOrClaimResultDto.cs" />
+    <Compile Include="Dto\TvUpdateDto.cs" />
+    <Compile Include="Dto\TvWithOrderDto.cs" />
+    <Compile Include="Dto\UserCommentWithExtraDto.cs" />
+    <Compile Include="Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExerciseBase.cs" />
+    <Compile Include="ExerciseAnswerText.cs" />
+    <Compile Include="ExerciseSelectText.cs" />
+    <Compile Include="ExerciseSkipText.cs" />
+    <Compile Include="ExerciseText.cs" />
+    <Compile Include="ExerciseSelect.cs" />
+    <Compile Include="ExerciseType.cs" />
+    <Compile Include="ExerciseTextAnswer.cs" />
+    <Compile Include="Film.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IdName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IdNamePair.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Level.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Location.cs" />
+    <Compile Include="Module.cs" />
+    <Compile Include="Picture.cs" />
+    <Compile Include="Payment.cs" />
+    <Compile Include="Tv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserComment.cs" />
+    <Compile Include="UserPasswordForCource.cs" />
+    <Compile Include="VerbElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WordElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WordsInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

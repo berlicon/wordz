@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[course]
+(
+		[id] int identity(1,1) not null,
+        [number] uniqueidentifier not null,
+        [name] nvarchar(100) not null,
+        [description] nvarchar(300) null,
+        [detailed_description] ntext null,
+        [picture_id] int null,
+        [price] decimal(18,2) null,
+		[currency_id] int null,
+        [ui_langauge_id] int not null,
+        [location_id] int null,
+        [category_id] int null,
+        [url] varchar(100) null,
+        [authors] nvarchar(1000) null,
+        [contacts] nvarchar(1000) null,
+        [tags] nvarchar(1000) null,
+        [links] nvarchar (4000) null,
+        [is_editable] bit not null,
+        [is_copied] bit not null,
+        [is_public] bit not null,
+        [password] nvarchar(100) null,
+        [google_advertisement] nvarchar(max),
+        [is_approved] bit not null,
+		[parent_id] int null,
+		[owner_id] int null,
+		[is_deleted] bit default(0)
+)

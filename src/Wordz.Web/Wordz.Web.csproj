@@ -1,0 +1,1650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A469B55-4266-454C-839E-DD9F4812B03E}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>Wordz.Web</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Wordz.Web</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wordz.BC\Wordz.BC.csproj">
+      <Name>Wordz.BC</Name>
+      <Project>{5EDE9E44-E421-4762-99EB-0B314A867DD7}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Wordz.BE\Wordz.BE.csproj">
+      <Name>Wordz.BE</Name>
+      <Project>{2BDBC08B-77FD-44B5-8473-D86AD010C4EF}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Wordz.DB\Wordz.DB.csproj">
+      <Project>{E2D646E6-342B-4DFA-BDB1-8568E337B58E}</Project>
+      <Name>Wordz.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wordz.LngOpt\Wordz.LngOpt.csproj">
+      <Name>Wordz.LngOpt</Name>
+      <Project>{4687AE45-E354-4150-ACAC-68E5E2E07045}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Wordz.Lng\Wordz.Lng.csproj">
+      <Name>Wordz.Lng</Name>
+      <Project>{0257AA40-A96C-4D33-B5AE-9EDDE67E4A16}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="Intelligencia.UrlRewriter, Version=1.7.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddWords.aspx.cs">
+      <DependentUpon>AddWords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddWords.aspx.designer.cs">
+      <DependentUpon>AddWords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SetAvailableFilms.aspx.cs">
+      <DependentUpon>SetAvailableFilms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SetAvailableFilms.aspx.designer.cs">
+      <DependentUpon>SetAvailableFilms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ads.aspx.cs">
+      <DependentUpon>Ads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ads.aspx.designer.cs">
+      <DependentUpon>Ads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis.aspx.cs">
+      <DependentUpon>Analysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis.aspx.designer.cs">
+      <DependentUpon>Analysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles.aspx.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles.aspx.designer.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Authors.aspx.cs">
+      <DependentUpon>Authors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authors.aspx.designer.cs">
+      <DependentUpon>Authors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckWords.aspx.cs">
+      <DependentUpon>CheckWords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckWords.aspx.designer.cs">
+      <DependentUpon>CheckWords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts.aspx.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts.aspx.designer.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Advert.ascx.cs">
+      <DependentUpon>Advert.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Advert.ascx.designer.cs">
+      <DependentUpon>Advert.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Counters.ascx.cs">
+      <DependentUpon>Counters.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Counters.ascx.designer.cs">
+      <DependentUpon>Counters.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ExerciseAnswerTextControl.ascx.cs">
+      <DependentUpon>ExerciseAnswerTextControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ExerciseAnswerTextControl.ascx.designer.cs">
+      <DependentUpon>ExerciseAnswerTextControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ExerciseSelectControl.ascx.cs">
+      <DependentUpon>ExerciseSelectControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ExerciseSelectControl.ascx.designer.cs">
+      <DependentUpon>ExerciseSelectControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ExerciseSkipTextControl.ascx.cs">
+      <DependentUpon>ExerciseSkipTextControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ExerciseSkipTextControl.ascx.designer.cs">
+      <DependentUpon>ExerciseSkipTextControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ExerciseTextControl.ascx.cs">
+      <DependentUpon>ExerciseTextControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ExerciseTextControl.ascx.designer.cs">
+      <DependentUpon>ExerciseTextControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Language.ascx.cs">
+      <DependentUpon>Language.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Language.ascx.designer.cs">
+      <DependentUpon>Language.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Logo.ascx.cs">
+      <DependentUpon>Logo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Logo.ascx.designer.cs">
+      <DependentUpon>Logo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewSign.ascx.cs">
+      <DependentUpon>NewSign.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\NewSign.ascx.designer.cs">
+      <DependentUpon>NewSign.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ActionButtonControl.ascx.cs">
+      <DependentUpon>ActionButtonControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ActionButtonControl.ascx.designer.cs">
+      <DependentUpon>ActionButtonControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Progress.ascx.cs">
+      <DependentUpon>Progress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Progress.ascx.designer.cs">
+      <DependentUpon>Progress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Satellites.ascx.cs">
+      <DependentUpon>Satellites.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Satellites.ascx.designer.cs">
+      <DependentUpon>Satellites.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdSign.ascx.cs">
+      <DependentUpon>UpdSign.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdSign.ascx.designer.cs">
+      <DependentUpon>UpdSign.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserComments.ascx.cs">
+      <DependentUpon>UserComments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UserComments.ascx.designer.cs">
+      <DependentUpon>UserComments.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ExerciseSelectTextControl.ascx.cs">
+      <DependentUpon>ExerciseSelectTextControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ExerciseSelectTextControl.ascx.designer.cs">
+      <DependentUpon>ExerciseSelectTextControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Course.aspx.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Course.aspx.designer.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DictionaryQuiz.aspx.cs">
+      <DependentUpon>DictionaryQuiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DictionaryQuiz.aspx.designer.cs">
+      <DependentUpon>DictionaryQuiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donate.aspx.cs">
+      <DependentUpon>Donate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donate.aspx.designer.cs">
+      <DependentUpon>Donate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExerciseSelect.aspx.cs">
+      <DependentUpon>ExerciseSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExerciseSelect.aspx.designer.cs">
+      <DependentUpon>ExerciseSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExerciseSelectEdit.aspx.cs">
+      <DependentUpon>ExerciseSelectEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExerciseSelectEdit.aspx.designer.cs">
+      <DependentUpon>ExerciseSelectEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExerciseSelectText.aspx.cs">
+      <DependentUpon>ExerciseSelectText.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExerciseSelectText.aspx.designer.cs">
+      <DependentUpon>ExerciseSelectText.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExerciseSkipText.aspx.cs">
+      <DependentUpon>ExerciseSkipText.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExerciseSkipText.aspx.designer.cs">
+      <DependentUpon>ExerciseSkipText.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExerciseTextAnswer.aspx.cs">
+      <DependentUpon>ExerciseTextAnswer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExerciseTextAnswer.aspx.designer.cs">
+      <DependentUpon>ExerciseTextAnswer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forum.aspx.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum.aspx.designer.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Goal.aspx.cs">
+      <DependentUpon>Goal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Goal.aspx.designer.cs">
+      <DependentUpon>Goal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\AccountHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\AddSourceTextHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\AddTestedVerbsHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\AddTestedWordsHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\AddWordsHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\AnalysisHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\Captha\GetCaptchaHandler.cs" />
+    <Compile Include="Handlers\ChangeLanguageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\CompleteDictionaryQuizHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\CompleteLevelQuizHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\CompleteWordsOrderQuizHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\Course\ApproveCourseHandler.cs" />
+    <Compile Include="Handlers\Course\CheckCoursePasswordHandler.cs" />
+    <Compile Include="Handlers\Course\GetCourseByIdHandler.cs" />
+    <Compile Include="Handlers\Course\UpdateCourseById.cs" />
+    <Compile Include="Handlers\DeleteVerbsHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\DeleteWordsHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\DictionariesHandlers\GetCategoriesHandler.cs" />
+    <Compile Include="Handlers\DictionariesHandlers\GetCurrenciesHandler.cs" />
+    <Compile Include="Handlers\DictionariesHandlers\GetLanguagesHandler.cs" />
+    <Compile Include="Handlers\Exercise\ExerciseAnswerTextAddHandler.cs" />
+    <Compile Include="Handlers\Exercise\CheckExerciseTextAnswerHandler.cs" />
+    <Compile Include="Handlers\Exercise\ExerciseAnswerTextHandler.cs" />
+    <Compile Include="Handlers\Exercise\ExerciseSelectAddHandler.cs" />
+    <Compile Include="Handlers\Exercise\ExerciseSelectTextAddHandler.cs" />
+    <Compile Include="Handlers\Exercise\ExerciseSelectTextGetHandler.cs" />
+    <Compile Include="Handlers\Exercise\ExerciseSelectGetHandler.cs" />
+    <Compile Include="Handlers\Exercise\ExerciseSkipTextAddHandler.cs" />
+    <Compile Include="Handlers\Exercise\ExerciseSkipTextGetHandler.cs" />
+    <Compile Include="Handlers\Exercise\ExerciseTextAddHandler.cs" />
+    <Compile Include="Handlers\Exercise\ExerciseTextGetHandler.cs" />
+    <Compile Include="Handlers\Exercise\UpdateExerciseAnswerTextHandler.cs" />
+    <Compile Include="Handlers\Module\ExercisesListForModuleGetHandler.cs" />
+    <Compile Include="Handlers\Module\GetModuleByIdHandler.cs" />
+    <Compile Include="Handlers\Module\UpdateModuleByIdHandler.cs" />
+    <Compile Include="Handlers\OnlineFilm\GetFilmCategoriesHandler.cs" />
+    <Compile Include="Handlers\OnlineFilm\GetFilmChannelByIdHandler.cs" />
+    <Compile Include="Handlers\OnlineFilm\GetFilmChannelsFromOtherUsersHandler.cs" />
+    <Compile Include="Handlers\OnlineFilm\GetFilmChannelsListHandler.cs" />
+    <Compile Include="Handlers\OnlineFilm\UpdateFilmChannelsHandler.cs" />
+    <Compile Include="Handlers\OnlineFm\GetFmChannelByIdHandler.cs" />
+    <Compile Include="Handlers\OnlineFm\GetFmChannelsFromOtherUsersHandler.cs" />
+    <Compile Include="Handlers\OnlineFm\GetFmChannelsListHandler.cs" />
+    <Compile Include="Handlers\OnlineFm\UpdateFmChannelsHandler.cs" />
+    <Compile Include="Handlers\OnlineTv\DeleteTvChannelByIdHandler.cs" />
+    <Compile Include="Handlers\OnlineTv\GetTvChannelByIdHandler.cs" />
+    <Compile Include="Handlers\OnlineTv\GetTvChannelsListHandler.cs" />
+    <Compile Include="Handlers\OnlineTv\GetTvChannelsFromOtherUsersHandler.cs" />
+    <Compile Include="Handlers\OnlineTv\UpdateTvChannelHandler.cs" />
+    <Compile Include="Handlers\OnlineTv\UpdateTvChannelsOrderHandler.cs" />
+    <Compile Include="Handlers\UserComment\AddUserCommentHandler.cs" />
+    <Compile Include="Handlers\UserComment\GetUserCommentsHandler.cs" />
+    <Compile Include="Handlers\UserComment\RateOrClaimCommentHandler.cs" />
+    <Compile Include="Helpers\CaptchaHelper.cs" />
+    <Compile Include="Helpers\HandlerHelper.cs" />
+    <Compile Include="Handlers\LoadDictionaryQuizHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\LoadLevelQuizHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\LoadMyWordsHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\LoadPictureHandler.cs" />
+    <Compile Include="Handlers\LoadVerbsHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\LoadWordsHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\LoadWordsInfoHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\LoadWordsOrderQuizHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\LoginHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\LogoutHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\Payments\PaymentForCourse.cs" />
+    <Compile Include="Handlers\Payments\PaymentForModule.cs" />
+    <Compile Include="Handlers\ProcessHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\ProcessUnknownWordsHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\SaveSoundHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\SaveSoundVerbsHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\SaveTextHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\SearchFilmHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\SetFilmModeHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handlers\UpdateRateHandler.cs" />
+    <Compile Include="Handlers\UpdateVocabularyHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\JsonHelper.cs" />
+    <Compile Include="Helpers\RenderHelper.cs" />
+    <Compile Include="Helpers\TextHelper.cs" />
+    <Compile Include="Helpers\UrlHelper.cs" />
+    <Compile Include="IrregularVerbs.aspx.cs">
+      <DependentUpon>IrregularVerbs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IrregularVerbs.aspx.designer.cs">
+      <DependentUpon>IrregularVerbs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages.aspx.cs">
+      <DependentUpon>Languages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Languages.aspx.designer.cs">
+      <DependentUpon>Languages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LevelQuiz.aspx.cs">
+      <DependentUpon>LevelQuiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LevelQuiz.aspx.designer.cs">
+      <DependentUpon>LevelQuiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Module.aspx.cs">
+      <DependentUpon>Module.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module.aspx.designer.cs">
+      <DependentUpon>Module.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineFilm.aspx.cs">
+      <DependentUpon>OnlineFilm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineFilm.aspx.designer.cs">
+      <DependentUpon>OnlineFilm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineFM.aspx.cs">
+      <DependentUpon>OnlineFM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineFM.aspx.designer.cs">
+      <DependentUpon>OnlineFM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineTV.aspx.cs">
+      <DependentUpon>OnlineTV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineTV.aspx.designer.cs">
+      <DependentUpon>OnlineTV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Partners.aspx.cs">
+      <DependentUpon>Partners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Partners.aspx.designer.cs">
+      <DependentUpon>Partners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process.aspx.cs">
+      <DependentUpon>Process.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process.aspx.designer.cs">
+      <DependentUpon>Process.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.aspx.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources.aspx.designer.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.aspx.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics.aspx.designer.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StorageManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExerciseText.aspx.cs">
+      <DependentUpon>ExerciseText.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExerciseText.aspx.designer.cs">
+      <DependentUpon>ExerciseText.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExerciseTextEdit.aspx.cs">
+      <DependentUpon>ExerciseTextEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExerciseTextEdit.aspx.designer.cs">
+      <DependentUpon>ExerciseTextEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\HandlersUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\PageUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vocabulary.aspx.cs">
+      <DependentUpon>Vocabulary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vocabulary.aspx.designer.cs">
+      <DependentUpon>Vocabulary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WordsOrderQuiz.aspx.cs">
+      <DependentUpon>WordsOrderQuiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WordsOrderQuiz.aspx.designer.cs">
+      <DependentUpon>WordsOrderQuiz.aspx</DependentUpon>
+    </Compile>
+    <Content Include="AddWords.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\SetAvailableFilms.aspx" />
+    <Content Include="Ads.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Articles.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Authors.aspx" />
+    <Content Include="CheckWords.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Contacts.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Controls\Advert.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\Counters.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\ExerciseAnswerTextControl.ascx" />
+    <Content Include="Controls\ExerciseSelectControl.ascx" />
+    <Content Include="Controls\ExerciseSkipTextControl.ascx" />
+    <Content Include="Controls\ExerciseTextControl.ascx" />
+    <Content Include="Controls\Footer.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\Language.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\Login.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\Logo.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\NewSign.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\ActionButtonControl.ascx" />
+    <Content Include="Controls\Progress.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\Satellites.ascx" />
+    <Content Include="Controls\UpdSign.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\UserComments.ascx" />
+    <Content Include="Controls\ExerciseSelectTextControl.ascx" />
+    <Content Include="Course.aspx" />
+    <Content Include="Courses.aspx" />
+    <Content Include="css\chosen-sprite%402x.png" />
+    <Content Include="css\chosen-sprite.png" />
+    <Content Include="css\chosen.css" />
+    <Content Include="css\ie7.css" />
+    <Content Include="css\images\buttons.gif" />
+    <Content Include="css\images\toolbar.gif" />
+    <Content Include="css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="css\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\jquery-ui-1.8.13.custom.css" />
+    <Content Include="css\jquery.arcticmodal-0.3.css" />
+    <Content Include="css\jquery.arcticmodal.simple.css" />
+    <Content Include="css\jquery.cleditor.css" />
+    <Content Include="css\jquery.formstyler.css" />
+    <Content Include="css\jquery.rating.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\wordz.css" />
+    <Content Include="Default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DictionaryQuiz.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Donate.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ExerciseSelect.aspx" />
+    <Content Include="ExerciseSelectEdit.aspx" />
+    <Content Include="ExerciseSelectText.aspx" />
+    <Content Include="ExerciseSkipText.aspx" />
+    <Content Include="ExerciseTextAnswer.aspx" />
+    <Content Include="FAQ.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Forum.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Goal.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="img\AdobeFlashPlayer.jpeg" />
+    <Content Include="img\ajax-loader-big.gif" />
+    <Content Include="img\article.png" />
+    <Content Include="img\banner.jpg" />
+    <Content Include="img\cash.png" />
+    <Content Include="img\cat_aids_eng.gif" />
+    <Content Include="img\Claim.png" />
+    <Content Include="img\cost.png" />
+    <Content Include="img\courseICO1.png" />
+    <Content Include="img\courseICO2.png" />
+    <Content Include="img\courseICO3.png" />
+    <Content Include="img\down.png" />
+    <Content Include="img\ectaco.gif" />
+    <Content Include="img\en.png" />
+    <Content Include="img\englishtips.JPG" />
+    <Content Include="img\facebook-l.png" />
+    <Content Include="img\facebook.jpg" />
+    <Content Include="img\facebook.png" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\film.png" />
+    <Content Include="img\Films\1000.gif" />
+    <Content Include="img\Films\130.gif" />
+    <Content Include="img\Films\131.gif" />
+    <Content Include="img\Films\132.gif" />
+    <Content Include="img\Films\133.gif" />
+    <Content Include="img\Films\134.gif" />
+    <Content Include="img\Films\136.gif" />
+    <Content Include="img\Films\138.gif" />
+    <Content Include="img\Films\139.gif" />
+    <Content Include="img\Films\140.gif" />
+    <Content Include="img\Films\141.gif" />
+    <Content Include="img\Films\142.gif" />
+    <Content Include="img\Films\143.gif" />
+    <Content Include="img\Films\144.gif" />
+    <Content Include="img\Films\146.gif" />
+    <Content Include="img\Films\147.gif" />
+    <Content Include="img\Films\148.gif" />
+    <Content Include="img\Films\150.gif" />
+    <Content Include="img\Films\151.gif" />
+    <Content Include="img\Films\153.gif" />
+    <Content Include="img\Films\154.gif" />
+    <Content Include="img\Films\155.gif" />
+    <Content Include="img\Films\156.gif" />
+    <Content Include="img\Films\158.gif" />
+    <Content Include="img\Films\159.gif" />
+    <Content Include="img\Films\160.gif" />
+    <Content Include="img\Films\162.gif" />
+    <Content Include="img\Films\163.gif" />
+    <Content Include="img\Films\164.gif" />
+    <Content Include="img\Films\165.gif" />
+    <Content Include="img\Films\166.gif" />
+    <Content Include="img\Films\167.gif" />
+    <Content Include="img\Films\168.gif" />
+    <Content Include="img\Films\169.gif" />
+    <Content Include="img\Films\170.gif" />
+    <Content Include="img\Films\171.gif" />
+    <Content Include="img\Films\172.gif" />
+    <Content Include="img\Films\173.gif" />
+    <Content Include="img\Films\174.gif" />
+    <Content Include="img\Films\175.gif" />
+    <Content Include="img\Films\176.gif" />
+    <Content Include="img\Films\177.gif" />
+    <Content Include="img\Films\179.gif" />
+    <Content Include="img\Films\180.gif" />
+    <Content Include="img\Films\181.gif" />
+    <Content Include="img\Films\182.gif" />
+    <Content Include="img\Films\183.gif" />
+    <Content Include="img\Films\184.gif" />
+    <Content Include="img\Films\186.gif" />
+    <Content Include="img\Films\187.gif" />
+    <Content Include="img\Films\188.gif" />
+    <Content Include="img\Films\189.gif" />
+    <Content Include="img\Films\190.gif" />
+    <Content Include="img\Films\191.gif" />
+    <Content Include="img\Films\192.gif" />
+    <Content Include="img\Films\193.gif" />
+    <Content Include="img\Films\194.gif" />
+    <Content Include="img\Films\195.gif" />
+    <Content Include="img\Films\196.gif" />
+    <Content Include="img\Films\197.gif" />
+    <Content Include="img\Films\198.gif" />
+    <Content Include="img\Films\199.gif" />
+    <Content Include="img\Films\200.gif" />
+    <Content Include="img\Films\201.gif" />
+    <Content Include="img\Films\202.gif" />
+    <Content Include="img\Films\203.gif" />
+    <Content Include="img\Films\204.gif" />
+    <Content Include="img\Films\205.gif" />
+    <Content Include="img\Films\206.gif" />
+    <Content Include="img\Films\207.gif" />
+    <Content Include="img\Films\208.gif" />
+    <Content Include="img\Films\209.gif" />
+    <Content Include="img\Films\210.gif" />
+    <Content Include="img\Films\211.gif" />
+    <Content Include="img\Films\212.gif" />
+    <Content Include="img\Films\213.gif" />
+    <Content Include="img\Films\214.gif" />
+    <Content Include="img\Films\215.gif" />
+    <Content Include="img\Films\216.gif" />
+    <Content Include="img\Films\217.gif" />
+    <Content Include="img\Films\218.gif" />
+    <Content Include="img\Films\219.gif" />
+    <Content Include="img\Films\220.gif" />
+    <Content Include="img\Films\221.gif" />
+    <Content Include="img\Films\222.gif" />
+    <Content Include="img\Films\223.gif" />
+    <Content Include="img\Films\224.gif" />
+    <Content Include="img\Films\225.gif" />
+    <Content Include="img\Films\226.gif" />
+    <Content Include="img\Films\227.gif" />
+    <Content Include="img\Films\228.gif" />
+    <Content Include="img\Films\229.gif" />
+    <Content Include="img\Films\230.gif" />
+    <Content Include="img\Films\231.gif" />
+    <Content Include="img\Films\232.gif" />
+    <Content Include="img\Films\233.gif" />
+    <Content Include="img\Films\234.gif" />
+    <Content Include="img\Films\235.gif" />
+    <Content Include="img\Films\236.gif" />
+    <Content Include="img\Films\237.gif" />
+    <Content Include="img\Films\238.gif" />
+    <Content Include="img\Films\239.gif" />
+    <Content Include="img\Films\240.gif" />
+    <Content Include="img\Films\241.gif" />
+    <Content Include="img\Films\242.gif" />
+    <Content Include="img\Films\243.gif" />
+    <Content Include="img\Films\244.gif" />
+    <Content Include="img\Films\246.gif" />
+    <Content Include="img\Films\248.gif" />
+    <Content Include="img\Films\249.gif" />
+    <Content Include="img\Films\250.gif" />
+    <Content Include="img\Films\251.gif" />
+    <Content Include="img\Films\252.gif" />
+    <Content Include="img\Films\253.gif" />
+    <Content Include="img\Films\254.gif" />
+    <Content Include="img\Films\256.gif" />
+    <Content Include="img\Films\257.gif" />
+    <Content Include="img\Films\258.gif" />
+    <Content Include="img\Films\259.gif" />
+    <Content Include="img\Films\260.gif" />
+    <Content Include="img\Films\261.gif" />
+    <Content Include="img\Films\262.gif" />
+    <Content Include="img\Films\263.gif" />
+    <Content Include="img\Films\264.gif" />
+    <Content Include="img\Films\265.gif" />
+    <Content Include="img\Films\266.gif" />
+    <Content Include="img\Films\267.gif" />
+    <Content Include="img\Films\268.gif" />
+    <Content Include="img\Films\269.gif" />
+    <Content Include="img\Films\270.gif" />
+    <Content Include="img\Films\272.gif" />
+    <Content Include="img\Films\273.gif" />
+    <Content Include="img\Films\274.gif" />
+    <Content Include="img\Films\275.gif" />
+    <Content Include="img\Films\278.gif" />
+    <Content Include="img\Films\279.gif" />
+    <Content Include="img\Films\281.gif" />
+    <Content Include="img\Films\282.gif" />
+    <Content Include="img\Films\283.gif" />
+    <Content Include="img\Films\284.gif" />
+    <Content Include="img\Films\285.gif" />
+    <Content Include="img\Films\286.gif" />
+    <Content Include="img\Films\287.gif" />
+    <Content Include="img\Films\288.gif" />
+    <Content Include="img\Films\289.gif" />
+    <Content Include="img\Films\290.gif" />
+    <Content Include="img\Films\291.gif" />
+    <Content Include="img\Films\292.gif" />
+    <Content Include="img\Films\293.gif" />
+    <Content Include="img\Films\294.gif" />
+    <Content Include="img\Films\295.gif" />
+    <Content Include="img\Films\296.gif" />
+    <Content Include="img\Films\297.gif" />
+    <Content Include="img\Films\298.gif" />
+    <Content Include="img\Films\299.gif" />
+    <Content Include="img\Films\301.gif" />
+    <Content Include="img\Films\302.gif" />
+    <Content Include="img\Films\303.gif" />
+    <Content Include="img\Films\304.gif" />
+    <Content Include="img\Films\305.gif" />
+    <Content Include="img\Films\306.gif" />
+    <Content Include="img\Films\307.gif" />
+    <Content Include="img\Films\308.gif" />
+    <Content Include="img\Films\309.gif" />
+    <Content Include="img\Films\310.gif" />
+    <Content Include="img\Films\311.gif" />
+    <Content Include="img\Films\312.gif" />
+    <Content Include="img\Films\313.gif" />
+    <Content Include="img\Films\314.gif" />
+    <Content Include="img\Films\315.gif" />
+    <Content Include="img\Films\316.gif" />
+    <Content Include="img\Films\317.gif" />
+    <Content Include="img\Films\318.gif" />
+    <Content Include="img\Films\319.gif" />
+    <Content Include="img\Films\320.gif" />
+    <Content Include="img\Films\321.gif" />
+    <Content Include="img\Films\324.gif" />
+    <Content Include="img\Films\325.gif" />
+    <Content Include="img\Films\326.gif" />
+    <Content Include="img\Films\328.gif" />
+    <Content Include="img\Films\330.gif" />
+    <Content Include="img\Films\331.gif" />
+    <Content Include="img\Films\333.gif" />
+    <Content Include="img\Films\334.gif" />
+    <Content Include="img\Films\335.gif" />
+    <Content Include="img\Films\336.gif" />
+    <Content Include="img\Films\337.gif" />
+    <Content Include="img\Films\338.gif" />
+    <Content Include="img\Films\339.gif" />
+    <Content Include="img\Films\340.gif" />
+    <Content Include="img\Films\341.gif" />
+    <Content Include="img\Films\342.gif" />
+    <Content Include="img\Films\343.gif" />
+    <Content Include="img\Films\344.gif" />
+    <Content Include="img\Films\345.gif" />
+    <Content Include="img\Films\346.gif" />
+    <Content Include="img\Films\347.gif" />
+    <Content Include="img\Films\348.gif" />
+    <Content Include="img\Films\349.gif" />
+    <Content Include="img\Films\351.gif" />
+    <Content Include="img\Films\352.gif" />
+    <Content Include="img\Films\353.gif" />
+    <Content Include="img\Films\355.gif" />
+    <Content Include="img\Films\357.gif" />
+    <Content Include="img\Films\358.gif" />
+    <Content Include="img\Films\359.gif" />
+    <Content Include="img\Films\360.gif" />
+    <Content Include="img\Films\361.gif" />
+    <Content Include="img\Films\362.gif" />
+    <Content Include="img\Films\363.gif" />
+    <Content Include="img\Films\364.gif" />
+    <Content Include="img\Films\365.gif" />
+    <Content Include="img\Films\366.gif" />
+    <Content Include="img\Films\367.gif" />
+    <Content Include="img\Films\368.gif" />
+    <Content Include="img\Films\369.gif" />
+    <Content Include="img\Films\370.gif" />
+    <Content Include="img\Films\371.gif" />
+    <Content Include="img\Films\372.gif" />
+    <Content Include="img\Films\373.gif" />
+    <Content Include="img\Films\374.gif" />
+    <Content Include="img\Films\375.gif" />
+    <Content Include="img\Films\376.gif" />
+    <Content Include="img\Films\377.gif" />
+    <Content Include="img\Films\378.gif" />
+    <Content Include="img\Films\379.gif" />
+    <Content Include="img\Films\380.gif" />
+    <Content Include="img\Films\381.gif" />
+    <Content Include="img\Films\382.gif" />
+    <Content Include="img\Films\383.gif" />
+    <Content Include="img\Films\384.gif" />
+    <Content Include="img\Films\385.gif" />
+    <Content Include="img\Films\386.gif" />
+    <Content Include="img\Films\388.gif" />
+    <Content Include="img\Films\389.gif" />
+    <Content Include="img\Films\390.gif" />
+    <Content Include="img\Films\391.gif" />
+    <Content Include="img\Films\392.gif" />
+    <Content Include="img\Films\393.gif" />
+    <Content Include="img\Films\394.gif" />
+    <Content Include="img\Films\395.gif" />
+    <Content Include="img\Films\396.gif" />
+    <Content Include="img\Films\397.gif" />
+    <Content Include="img\Films\399.gif" />
+    <Content Include="img\Films\400.gif" />
+    <Content Include="img\Films\401.gif" />
+    <Content Include="img\Films\402.gif" />
+    <Content Include="img\Films\403.gif" />
+    <Content Include="img\Films\404.gif" />
+    <Content Include="img\Films\405.gif" />
+    <Content Include="img\Films\406.gif" />
+    <Content Include="img\Films\407.gif" />
+    <Content Include="img\Films\408.gif" />
+    <Content Include="img\Films\409.gif" />
+    <Content Include="img\Films\410.gif" />
+    <Content Include="img\Films\411.gif" />
+    <Content Include="img\Films\412.gif" />
+    <Content Include="img\Films\413.gif" />
+    <Content Include="img\Films\414.gif" />
+    <Content Include="img\Films\416.gif" />
+    <Content Include="img\Films\417.gif" />
+    <Content Include="img\Films\418.gif" />
+    <Content Include="img\Films\419.gif" />
+    <Content Include="img\Films\420.gif" />
+    <Content Include="img\Films\421.gif" />
+    <Content Include="img\Films\422.gif" />
+    <Content Include="img\Films\423.gif" />
+    <Content Include="img\Films\424.gif" />
+    <Content Include="img\Films\425.gif" />
+    <Content Include="img\Films\426.gif" />
+    <Content Include="img\Films\427.gif" />
+    <Content Include="img\Films\428.gif" />
+    <Content Include="img\Films\429.gif" />
+    <Content Include="img\Films\430.gif" />
+    <Content Include="img\Films\431.gif" />
+    <Content Include="img\Films\432.gif" />
+    <Content Include="img\Films\433.gif" />
+    <Content Include="img\Films\434.gif" />
+    <Content Include="img\Films\435.gif" />
+    <Content Include="img\Films\436.gif" />
+    <Content Include="img\Films\437.gif" />
+    <Content Include="img\Films\438.gif" />
+    <Content Include="img\Films\439.gif" />
+    <Content Include="img\Films\441.gif" />
+    <Content Include="img\Films\442.gif" />
+    <Content Include="img\Films\443.gif" />
+    <Content Include="img\Films\444.gif" />
+    <Content Include="img\Films\445.gif" />
+    <Content Include="img\Films\446.gif" />
+    <Content Include="img\Films\447.gif" />
+    <Content Include="img\Films\448.gif" />
+    <Content Include="img\Films\449.gif" />
+    <Content Include="img\Films\450.gif" />
+    <Content Include="img\Films\451.gif" />
+    <Content Include="img\Films\452.gif" />
+    <Content Include="img\Films\454.gif" />
+    <Content Include="img\Films\455.gif" />
+    <Content Include="img\Films\456.gif" />
+    <Content Include="img\Films\457.gif" />
+    <Content Include="img\Films\458.gif" />
+    <Content Include="img\Films\459.gif" />
+    <Content Include="img\Films\460.gif" />
+    <Content Include="img\Films\461.gif" />
+    <Content Include="img\Films\462.gif" />
+    <Content Include="img\Films\463.gif" />
+    <Content Include="img\Films\464.gif" />
+    <Content Include="img\Films\465.gif" />
+    <Content Include="img\Films\466.gif" />
+    <Content Include="img\Films\467.gif" />
+    <Content Include="img\Films\468.gif" />
+    <Content Include="img\Films\469.gif" />
+    <Content Include="img\Films\470.gif" />
+    <Content Include="img\Films\471.gif" />
+    <Content Include="img\Films\472.gif" />
+    <Content Include="img\Films\473.gif" />
+    <Content Include="img\Films\474.gif" />
+    <Content Include="img\Films\475.gif" />
+    <Content Include="img\Films\477.gif" />
+    <Content Include="img\Films\479.gif" />
+    <Content Include="img\Films\480.gif" />
+    <Content Include="img\Films\481.gif" />
+    <Content Include="img\Films\482.gif" />
+    <Content Include="img\Films\483.gif" />
+    <Content Include="img\Films\484.gif" />
+    <Content Include="img\Films\485.gif" />
+    <Content Include="img\Films\486.gif" />
+    <Content Include="img\Films\487.gif" />
+    <Content Include="img\Films\488.gif" />
+    <Content Include="img\Films\489.gif" />
+    <Content Include="img\Films\490.gif" />
+    <Content Include="img\Films\492.gif" />
+    <Content Include="img\Films\493.gif" />
+    <Content Include="img\Films\498.gif" />
+    <Content Include="img\Films\499.gif" />
+    <Content Include="img\Films\500.gif" />
+    <Content Include="img\Films\501.gif" />
+    <Content Include="img\Films\502.gif" />
+    <Content Include="img\Films\503.gif" />
+    <Content Include="img\Films\504.gif" />
+    <Content Include="img\Films\505.gif" />
+    <Content Include="img\Films\506.gif" />
+    <Content Include="img\Films\507.gif" />
+    <Content Include="img\Films\508.gif" />
+    <Content Include="img\Films\509.gif" />
+    <Content Include="img\Films\510.gif" />
+    <Content Include="img\Films\511.gif" />
+    <Content Include="img\Films\512.gif" />
+    <Content Include="img\Films\513.gif" />
+    <Content Include="img\Films\514.gif" />
+    <Content Include="img\Films\515.gif" />
+    <Content Include="img\Films\516.gif" />
+    <Content Include="img\Films\517.gif" />
+    <Content Include="img\Films\518.gif" />
+    <Content Include="img\Films\519.gif" />
+    <Content Include="img\Films\520.gif" />
+    <Content Include="img\Films\521.gif" />
+    <Content Include="img\Films\522.gif" />
+    <Content Include="img\Films\523.gif" />
+    <Content Include="img\Films\524.gif" />
+    <Content Include="img\Films\525.gif" />
+    <Content Include="img\Films\528.gif" />
+    <Content Include="img\Films\529.gif" />
+    <Content Include="img\Films\531.gif" />
+    <Content Include="img\Films\535.gif" />
+    <Content Include="img\Films\536.gif" />
+    <Content Include="img\Films\537.gif" />
+    <Content Include="img\Films\icon.gif" />
+    <Content Include="img\Films\list.gif" />
+    <Content Include="img\Flags\de-en.GIF" />
+    <Content Include="img\Flags\en-en.GIF" />
+    <Content Include="img\Flags\en-ru.GIF" />
+    <Content Include="img\Flags\es-en.GIF" />
+    <Content Include="img\Flags\fr-en.GIF" />
+    <Content Include="img\Flags\ja-en.GIF" />
+    <Content Include="img\Flags\pt-en.GIF" />
+    <Content Include="img\Flags\ru-en.GIF" />
+    <Content Include="img\Flags\zh-en.GIF" />
+    <Content Include="img\FmChannels\bandit_radio.jpg" />
+    <Content Include="img\FmChannels\bassdrive.jpg" />
+    <Content Include="img\FmChannels\bbc_asian_net.jpg" />
+    <Content Include="img\FmChannels\bbc_cambs.JPG" />
+    <Content Include="img\FmChannels\bbc_manchester.JPG" />
+    <Content Include="img\FmChannels\bbc_oxford.JPG" />
+    <Content Include="img\FmChannels\bbc_radio1.jpg" />
+    <Content Include="img\FmChannels\bbc_radio2.JPG" />
+    <Content Include="img\FmChannels\bbc_radio3.jpg" />
+    <Content Include="img\FmChannels\bbc_radio4.JPG" />
+    <Content Include="img\FmChannels\bbc_radio5.jpg" />
+    <Content Include="img\FmChannels\bbc_radio6_music.jpg" />
+    <Content Include="img\FmChannels\bbc_radio7.jpg" />
+    <Content Include="img\FmChannels\bbc_radio_1xtra.jpg" />
+    <Content Include="img\FmChannels\bbc_radio_cymru.jpg" />
+    <Content Include="img\FmChannels\bbc_radio_scotland.jpg" />
+    <Content Include="img\FmChannels\bbc_radio_ulster.jpg" />
+    <Content Include="img\FmChannels\business_fm_ru.jpg" />
+    <Content Include="img\FmChannels\club977_80.jpg" />
+    <Content Include="img\FmChannels\club_life_radio_ru.jpg" />
+    <Content Include="img\FmChannels\cnn.jpg" />
+    <Content Include="img\FmChannels\deep_mix.jpg" />
+    <Content Include="img\FmChannels\deti_fm.jpg" />
+    <Content Include="img\FmChannels\di_fm.jpg" />
+    <Content Include="img\FmChannels\dobryepesni.jpg" />
+    <Content Include="img\FmChannels\echomoscow.jpg" />
+    <Content Include="img\FmChannels\europa_plus.jpg" />
+    <Content Include="img\FmChannels\freechechnya.jpg" />
+    <Content Include="img\FmChannels\fusion.jpg" />
+    <Content Include="img\FmChannels\golos_rossii.jpg" />
+    <Content Include="img\FmChannels\hitfm101.jpg" />
+    <Content Include="img\FmChannels\jazznet.jpg" />
+    <Content Include="img\FmChannels\katek_ru.jpg" />
+    <Content Include="img\FmChannels\keks_fm.jpg" />
+    <Content Include="img\FmChannels\krkt_fm.jpg" />
+    <Content Include="img\FmChannels\love_radio_ru.jpg" />
+    <Content Include="img\FmChannels\maximum_nnov.jpg" />
+    <Content Include="img\FmChannels\mayak.jpg" />
+    <Content Include="img\FmChannels\m_radio_ru.jpg" />
+    <Content Include="img\FmChannels\nasheradio.jpg" />
+    <Content Include="img\FmChannels\nashe_vremya.jpg" />
+    <Content Include="img\FmChannels\nv_radio.jpg" />
+    <Content Include="img\FmChannels\premier_christian_radio.jpg" />
+    <Content Include="img\FmChannels\qmusic.jpg" />
+    <Content Include="img\FmChannels\radio101_ru.jpg" />
+    <Content Include="img\FmChannels\radio102.jpg" />
+    <Content Include="img\FmChannels\radio7_ru.jpg" />
+    <Content Include="img\FmChannels\radiorussia.jpg" />
+    <Content Include="img\FmChannels\radiovanya.jpg" />
+    <Content Include="img\FmChannels\radio_caroline.jpg" />
+    <Content Include="img\FmChannels\radio_dacha.jpg" />
+    <Content Include="img\FmChannels\radio_garadarica.jpg" />
+    <Content Include="img\FmChannels\radio_kultura.jpg" />
+    <Content Include="img\FmChannels\radio_popsa.jpg" />
+    <Content Include="img\FmChannels\radio_rin_russianhits.jpg" />
+    <Content Include="img\FmChannels\radio_sibir.jpg" />
+    <Content Include="img\FmChannels\radio_sk_ru.jpg" />
+    <Content Include="img\FmChannels\radio_svoboda.jpg" />
+    <Content Include="img\FmChannels\radio_wizard_ru.jpg" />
+    <Content Include="img\FmChannels\radio_zenit.jpg" />
+    <Content Include="img\FmChannels\rambler.jpg" />
+    <Content Include="img\FmChannels\randevu_radio.jpg" />
+    <Content Include="img\FmChannels\relax_fm_ru.jpg" />
+    <Content Include="img\FmChannels\rsn.jpg" />
+    <Content Include="img\FmChannels\rusradio.jpg" />
+    <Content Include="img\FmChannels\russongs.jpg" />
+    <Content Include="img\FmChannels\ruvolna.jpg" />
+    <Content Include="img\FmChannels\schanson.jpg" />
+    <Content Include="img\FmChannels\sky.jpg" />
+    <Content Include="img\FmChannels\solar_radio.jpg" />
+    <Content Include="img\FmChannels\sun.jpg" />
+    <Content Include="img\FmChannels\svejee_radio.jpg" />
+    <Content Include="img\FmChannels\the_hits.jpg" />
+    <Content Include="img\FmChannels\tin_fm.jpg" />
+    <Content Include="img\FmChannels\topfm_ru.jpg" />
+    <Content Include="img\FmChannels\uniton.jpg" />
+    <Content Include="img\FmChannels\videogamers.jpg" />
+    <Content Include="img\FmChannels\virginradio.jpg" />
+    <Content Include="img\FmChannels\virusfm.jpg" />
+    <Content Include="img\FmChannels\vitaradio.jpg" />
+    <Content Include="img\FmChannels\vkontakte.jpg" />
+    <Content Include="img\FmChannels\wkcr.jpg" />
+    <Content Include="img\FmChannels\xmasmelody.JPG" />
+    <Content Include="img\FmChannels\yugo_vostok.jpg" />
+    <Content Include="img\fr.png" />
+    <Content Include="img\group.png" />
+    <Content Include="img\lang.png" />
+    <Content Include="img\logo.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\messages.png" />
+    <Content Include="img\minus.JPG" />
+    <Content Include="img\paySystems.jpg" />
+    <Content Include="img\place.png" />
+    <Content Include="img\radio.png" />
+    <Content Include="img\realplayer.gif" />
+    <Content Include="img\ru.png" />
+    <Content Include="img\s1.png" />
+    <Content Include="img\s2.png" />
+    <Content Include="img\s3.png" />
+    <Content Include="img\s4.png" />
+    <Content Include="img\s5.png" />
+    <Content Include="img\s6.png" />
+    <Content Include="img\s7.png" />
+    <Content Include="img\s8.png" />
+    <Content Include="img\s9.png" />
+    <Content Include="img\stars.png" />
+    <Content Include="img\stat.png" />
+    <Content Include="img\topic.png" />
+    <Content Include="img\tv.png" />
+    <Content Include="img\TvChannels\bloomberg.JPG" />
+    <Content Include="img\TvChannels\byutv.jpg" />
+    <Content Include="img\TvChannels\cnn.jpg" />
+    <Content Include="img\TvChannels\cnn_ibn_tv.jpg" />
+    <Content Include="img\TvChannels\cpac.jpg" />
+    <Content Include="img\TvChannels\cspan.jpg" />
+    <Content Include="img\TvChannels\cspan2.jpg" />
+    <Content Include="img\TvChannels\cspan3.jpg" />
+    <Content Include="img\TvChannels\espn.jpg" />
+    <Content Include="img\TvChannels\fabrikazwezd.jpg" />
+    <Content Include="img\TvChannels\islam_channel.jpg" />
+    <Content Include="img\TvChannels\jc_tv.jpg" />
+    <Content Include="img\TvChannels\kulak.jpg" />
+    <Content Include="img\TvChannels\mir.jpg" />
+    <Content Include="img\TvChannels\mlb_com.jpg" />
+    <Content Include="img\TvChannels\nakednews.jpg" />
+    <Content Include="img\TvChannels\nbatv.jpg" />
+    <Content Include="img\TvChannels\nbc_weather_plus.jpg" />
+    <Content Include="img\TvChannels\ntv.jpg" />
+    <Content Include="img\TvChannels\ort.jpg" />
+    <Content Include="img\TvChannels\pentagon_tv.jpg" />
+    <Content Include="img\TvChannels\perwiy_kanal_biznesa.jpg" />
+    <Content Include="img\TvChannels\rbkbusinesstv.jpg" />
+    <Content Include="img\TvChannels\rtrplaneta.jpg" />
+    <Content Include="img\TvChannels\rtrsport.jpg" />
+    <Content Include="img\TvChannels\russia_today_tv.jpg" />
+    <Content Include="img\TvChannels\skynewstv.jpg" />
+    <Content Include="img\TvChannels\tbn.jpg" />
+    <Content Include="img\TvChannels\tnt_ru.jpg" />
+    <Content Include="img\TvChannels\tsc.jpg" />
+    <Content Include="img\TvChannels\vesti_24.jpg" />
+    <Content Include="img\twitter-l.png" />
+    <Content Include="img\twitter.png" />
+    <Content Include="img\up.png" />
+    <Content Include="img\vk-l.png" />
+    <Content Include="img\vk.jpg" />
+    <Content Include="img\winmediaplayer.gif" />
+    <Content Include="img\Wordz_en_Banner_88_31.gif" />
+    <Content Include="img\Wordz_en_Logo_86_40.PNG" />
+    <Content Include="img\Wordz_ru_Banner_88_31.gif" />
+    <Content Include="img\Wordz_ru_Logo_86_40.PNG" />
+    <Content Include="IrregularVerbs.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="js\tinymce\jquery.tinymce.min.js" />
+    <Content Include="js\tinymce\license.txt" />
+    <Content Include="js\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="js\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\example\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\example_dependency\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\layer\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\media\moxieplayer.swf" />
+    <Content Include="js\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="js\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="js\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="js\tinymce\skins\lightgray\content.inline.min.css" />
+    <Content Include="js\tinymce\skins\lightgray\content.min.css" />
+    <Content Include="js\tinymce\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="js\tinymce\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="js\tinymce\skins\lightgray\img\anchor.gif" />
+    <Content Include="js\tinymce\skins\lightgray\img\loader.gif" />
+    <Content Include="js\tinymce\skins\lightgray\img\object.gif" />
+    <Content Include="js\tinymce\skins\lightgray\img\trans.gif" />
+    <Content Include="js\tinymce\skins\lightgray\img\wline.gif" />
+    <Content Include="js\tinymce\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="js\tinymce\skins\lightgray\skin.min.css" />
+    <Content Include="js\tinymce\themes\modern\theme.min.js" />
+    <Content Include="js\tinymce\tinymce.min.js" />
+    <Content Include="js\wordz.comments.js" />
+    <Content Include="js\actions.js" />
+    <Content Include="js\chosen.jquery.js" />
+    <Content Include="js\jquery.cleditor.js" />
+    <Content Include="js\json.js" />
+    <Content Include="js\wordz.common.js" />
+    <Content Include="js\wordz.exercises_select_text_do.js" />
+    <Content Include="js\wordz.exercises_text_answer_do.js" />
+    <Content Include="js\wordz.exercise_answer_text.js" />
+    <Content Include="js\wordz.exercises_select_text.js" />
+    <Content Include="js\wordz.exercises_text_answer.js" />
+    <Content Include="js\jquery-ui-1.8.13.custom.min.js" />
+    <Content Include="js\jquery.arcticmodal-0.3.min.js" />
+    <Content Include="js\jquery.form.min.js" />
+    <Content Include="js\jquery.formstyler.min.js" />
+    <Content Include="js\jquery.rating-2.0.js" />
+    <Content Include="js\ui.dropdownchecklist-1.4-min.js" />
+    <Content Include="js\wordz.course.js" />
+    <Content Include="js\wordz.exercise_select.js" />
+    <Content Include="js\wordz.exercise_skip_text.js" />
+    <Content Include="js\wordz.exercise_skip_text_do.js" />
+    <Content Include="js\wordz.exercise_text.js" />
+    <Content Include="js\wordz.js" />
+    <Content Include="js\wordz.module.exercises.js" />
+    <Content Include="js\wordz.module.js" />
+    <Content Include="js\wordz.onlinefilm.js" />
+    <Content Include="js\wordz.onlinefm.js" />
+    <Content Include="js\wordz.onlinetv.js" />
+    <Content Include="Languages.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="LevelQuiz.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Login.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Module.aspx" />
+    <Content Include="News.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="OnlineFilm.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="OnlineFM.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="OnlineTV.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Partners.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Payment.aspx" />
+    <Content Include="player.swf" />
+    <Content Include="Process.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Resources.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="robots.txt" />
+    <Content Include="sitemap.xml" />
+    <Content Include="Statistics.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ExerciseText.aspx" />
+    <Content Include="ExerciseTextEdit.aspx" />
+    <Content Include="Vocabulary.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="WordsOrderQuiz.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <EmbeddedResource Include="AddWords.aspx.resx">
+      <DependentUpon>AddWords.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ads.aspx.resx">
+      <DependentUpon>Ads.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis.aspx.resx">
+      <DependentUpon>Analysis.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articles.aspx.resx">
+      <DependentUpon>Articles.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckWords.aspx.resx">
+      <DependentUpon>CheckWords.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacts.aspx.resx">
+      <DependentUpon>Contacts.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Advert.ascx.resx">
+      <DependentUpon>Advert.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Counters.ascx.resx">
+      <DependentUpon>Counters.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Footer.ascx.resx">
+      <DependentUpon>Footer.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Language.ascx.resx">
+      <DependentUpon>Language.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Login.ascx.resx">
+      <DependentUpon>Login.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Logo.ascx.resx">
+      <DependentUpon>Logo.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewSign.ascx.resx">
+      <DependentUpon>NewSign.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Progress.ascx.resx">
+      <DependentUpon>Progress.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Satellites.ascx.resx">
+      <DependentUpon>Satellites.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UpdSign.ascx.resx">
+      <DependentUpon>UpdSign.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DictionaryQuiz.aspx.resx">
+      <DependentUpon>DictionaryQuiz.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donate.aspx.resx">
+      <DependentUpon>Donate.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAQ.aspx.resx">
+      <DependentUpon>FAQ.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forum.aspx.resx">
+      <DependentUpon>Forum.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goal.aspx.resx">
+      <DependentUpon>Goal.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IrregularVerbs.aspx.resx">
+      <DependentUpon>IrregularVerbs.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages.aspx.resx">
+      <DependentUpon>Languages.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelQuiz.aspx.resx">
+      <DependentUpon>LevelQuiz.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.aspx.resx">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="News.aspx.resx">
+      <DependentUpon>News.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineFilm.aspx.resx">
+      <DependentUpon>OnlineFilm.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineFM.aspx.resx">
+      <DependentUpon>OnlineFM.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineTV.aspx.resx">
+      <DependentUpon>OnlineTV.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partners.aspx.resx">
+      <DependentUpon>Partners.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process.aspx.resx">
+      <DependentUpon>Process.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.aspx.resx">
+      <DependentUpon>Resources.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.aspx.resx">
+      <DependentUpon>Statistics.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vocabulary.aspx.resx">
+      <DependentUpon>Vocabulary.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WordsOrderQuiz.aspx.resx">
+      <DependentUpon>WordsOrderQuiz.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="css\style.less" />
+    <Content Include="MasterPage.Master" />
+    <None Include="js\tinymce\langs\readme.md" />
+    <None Include="js\tinymce\skins\lightgray\fonts\readme.md" />
+    <None Include="js\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
+    <None Include="js\tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
+    <None Include="js\tinymce\skins\lightgray\fonts\tinymce-small.woff" />
+    <None Include="js\tinymce\skins\lightgray\fonts\tinymce.eot" />
+    <None Include="js\tinymce\skins\lightgray\fonts\tinymce.ttf" />
+    <None Include="js\tinymce\skins\lightgray\fonts\tinymce.woff" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="res\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60230</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Wordz.Web</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

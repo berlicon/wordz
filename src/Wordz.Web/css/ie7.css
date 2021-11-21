@@ -1,0 +1,17 @@
+#logo a {position: relative;}
+
+.headerMenu li {display: inline !important;}
+
+#courses .course {position: relative; width: 29%;}
+#courses .pagination li{display: inline;}
+.sectionTitle {display: inline;}
+#servises .list3 li{display: inline;}
+
+
+#addFile p {display: inline; line-height: 25px;}
+#fileContent {width: 94%; border: 1px solid #ccc;}
+
+
+#translate {padding: 20px 0;}
+#translate label {}
+#footer #footer-r input[type="submit"] {top: -33px;}
