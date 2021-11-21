@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Анализ</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/chosen.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/chosen.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="js/actions.js"></script>
+
+</head>
+<body class="innerPage">
+	<div id="frameWrapper">
+		<div id="header">
+			<div id="logo"><a href="javascript:void(0);"><img src="images/logo.png" alt=""></a></div>
+
+			<div id="headerCenter">
+				<h3 class="contentTitle">Анализ текста</h3>
+				<div class="siteName">Определение в тексте незнакомых слов и пополнение личного словаря</div>
+			</div>
+
+			<div id="cabinet">
+				<div class="info">
+					<span class="nic">Lorem ipsum.</span>
+					<span class="messages">4</span>
+					<span class="cash">345$</span>
+				</div>
+				<div class="login"><a href="javascript:void(0);">Выйти</a></div>
+			</div>
+			<div class="clr"></div>
+
+		</div> <!--  end #header -->
+		<div id="middle">
+			<div id="center">
+				<div class="hr"></div>
+				<div id="addFile">
+					<p>Вставьте текст из файла <a href="javascript:void(0);">(UTF-8)</a></p>
+					<input type="file" id="file">
+				</div>
+
+				<textarea name="" id="fileContent" cols="80" rows="30"></textarea>
+
+				<div id="analysisButtons">
+					<input type="button" class="button" value="Все знакомо!">
+					<input type="button" class="button" value="Все незнакомо!">
+					<input type="button" class="button" value="Анализировать текст">
+					<div class="clr"></div>
+					<input type="button" class="buttonRed" value="Обновить словарь">
+					<input type="button" class="buttonRed" value="Обработать словарь">
+				</div>
+				<p>Кликнув по слову, вы можете отметить его как <span class="red">незнакомое</span> или как  <span class="blue">знакомое</span> слово</p>
+				
+			</div>
+			<div id="right">
+				<div id="translate">
+					<label for="translateFrom">Текст: </label>
+					<select name="translateFrom" id="">
+						<option value="0">Lorem ipsum.</option>
+						<option value="1">Lorem ipsum.</option>
+						<option value="2">Lorem ipsum.</option>
+						<option value="3">Lorem ipsum.</option>						
+					</select>
+					<div class="clr"></div>
+					<label for="translateTo">Перевод: </label>
+					<select name="translateTo" id="">
+						<option value="0">Lorem ipsum.</option>
+						<option value="1">Lorem ipsum.</option>
+						<option value="2">Lorem ipsum.</option>
+						<option value="3">Lorem ipsum.</option>
+					</select>
+				</div>
+				<div id="vk" class="module"><img src="images/vk.jpg" alt=""></div>
+				<div class="clr"></div>
+				<div id="facebook" class="module"><img src="images/facebook.jpg" alt=""></div>
+				<div class="module"><img src="images/banner.jpg" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<div id="footerWrapper">
+		<div id="footer">
+			<div id="footer-l">
+				<div class="infoBlock">
+					<h3 class="infoBlockTitle">О компании</h3>
+					<ul>
+						<li><a href="javascript:void(0);">Информация о компании</a></li>
+						<li><a href="javascript:void(0);">Как это работает?</a></li>
+						<li><a href="javascript:void(0);">Уроки</a></li>
+						<li><a href="javascript:void(0);">Форум</a></li>
+					</ul>
+				</div>
+				<div class="infoBlock">
+					<h3 class="infoBlockTitle">О компании</h3>
+					<ul>
+						<li><a href="javascript:void(0);">Информация о компании</a></li>
+						<li><a href="javascript:void(0);">Как это работает?</a></li>
+						<li><a href="javascript:void(0);">Уроки</a></li>
+						<li><a href="javascript:void(0);">Форум</a></li>
+					</ul>
+				</div>
+				<div class="infoBlock">
+					<h3 class="infoBlockTitle">О компании</h3>
+					<ul>
+						<li><a href="javascript:void(0);">Информация о компании</a></li>
+						<li><a href="javascript:void(0);">Как это работает?</a></li>
+						<li><a href="javascript:void(0);">Уроки</a></li>
+						<li><a href="javascript:void(0);">Форум</a></li>
+					</ul>
+				</div>
+				<div class="infoBlock">
+					<h3 class="infoBlockTitle">Мы принимаем к оплате</h3>
+					<a href="javascript:void(0);"><img src="images/paySystems.jpg" alt=""></a>
+				</div>
+				<div class="infoBlock">
+					<h3 class="infoBlockTitle">Мы социальны</h3>
+					<a href="javascript:void(0);"><img src="images/twitter.png" alt=""></a>
+					<a href="javascript:void(0);"><img src="images/facebook.png" alt=""></a>
+				</div>
+			</div>
+			<div id="footer-r">
+				<h3 class="infoBlockTitle">ЗАРЕГЕСТРИРОВАТЬСЯ В ИНФОРМАЦИОННОМ БЮЛЛЕТЕНЕ</h3>
+				<p>Подпишитесь чтобы получать самые последние новости и объявления с нашего сайта</p>
+				<div class="clr"></div>
+					<input type="text" placeholder="Ваш e-mail"> <input type="submit" class="buttonRed" value="Ok" id="email">
+				
+			</div>
+			<div class="clr"></div>
+			<div id="copyright">
+				<p>
+					Использование сайта PropertyRoom.com или его филиалов означает согласие с <a href="javascript:void(0);">Пользовательским соглашением</a> <br>
+					Copyright 1999 -2013 PropertyRoom.com, Inc. Все права защищены
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
